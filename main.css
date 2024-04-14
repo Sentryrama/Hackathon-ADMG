@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: greenyellow;
+    background-color: rgba(242, 210, 99, 1);
     color: black;
     margin-top: 50px;
 }
@@ -22,7 +22,7 @@ img{
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: greenyellow;
+    background-color: rgba(242, 210, 99, 1);
     margin-bottom: 0;
     margin-top: 10px;
 }

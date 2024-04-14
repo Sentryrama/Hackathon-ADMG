@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <title>Tlacualli</title>
+        <title>Xihuame</title>
         
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="...">
     <link rel="stylesheet" href="main.css">
@@ -13,14 +13,14 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a href="#" class="navbar-brand">Tlacualli</a>
+        <a href="#" class="navbar-brand">Xihuame</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/about.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="/about.html" class="nav-link"></a></li>
             <li class="nav-item"><a href="/precios.html" class="nav-link">Precios</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Términos y Condiciones</a></li>
             <li class="nav-item"><a href="/contacto.html" class="nav-link">Contacto</a></li>
@@ -28,15 +28,72 @@
         </div>
         </nav>
         <div class="jumbotron">
-        <h1>Tlacualli</h1>
+        <h1>Xihuame</h1>
         </div>
         <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Home</li>
+            <li class="breadcrumb-item active" aria-current="page">Lecciones</li>
             </ol>
         </nav>
-        </div>
+        </divv
+        <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+            <div class="accordion" id="accordionTarjetas">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                    data-target="#collapseBasica" aria-expanded="true" aria-controls="collpseBasica">
+                      Inversiones
+                    </button>
+                  </h5>
+                </div>
+      
+                <div class="collapse show" id="collapseBasica" aria-labelledby="headingOne"
+                data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Prestamos
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                      Prestamos
+                    </button>
+                  </h5>
+                </div>
+                <div class="collapse" id="collapseVIP" aria-labelledby="headingTwo"
+                data-parent="#accordionTarjetas">
+                <div class="card-body">
+                  Puedes reservar en 6 cuotas sin interés.
+                  Al llegar, recibirás una canasta de obsequios para disfrutar con
+                  tu familia.
+                </div>
+               </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseBlack" aria-expanded="false" aria-controls="collapsedBlack">
+                      Pago de impuestos
+                    </button>
+                  </h5>
+                </div>
+                <div class="collapse" id="collapseBlack" aria-labelledby="headingThree"
+                data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Puedes reservare en 12 cuotas sin interés. Al llegar recibirás una canasta
+                    de obsequios para disfrutar cin tu familia y un acceso al gimnasio y spa todos 
+                    los dias de tus vacaciones.
+                  </div>
+                </div>
+              </div>
+            </div >
+          </div>
 
         <footer>
         <div class="row">
@@ -62,8 +119,9 @@
             </div>  
         </div>   
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="./js/index.js"></script>
     </body>
     </html>
