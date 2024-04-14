@@ -1,0 +1,105 @@
+#search-bar-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background-color: rgba(255, 203, 103, 1);
+    padding-bottom: 5px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: rgba(255, 203, 103, 1);
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* CSS for centering and emphasizing the search-bar-section */
+.search-bar-section {
+    text-align: center; /* Center the search bar */
+    margin: 20px 0; /* Add margin for emphasis */
+    width: 80%;
+}
+
+#search-bar{
+    width: 400px;
+}
+
+.search-bar-section input {
+    padding: 10px; /* Add padding for input field */
+    border: 1px solid #ccc; /* Add border for input field */
+    border-radius: 5px; /* Add border-radius for input field */
+}
+
+.search-bar-section button {
+    padding: 10px 20px; /* Add padding for button */
+    background-color: #007bff; /* Add background color for button */
+    color: #fff; /* Add text color for button */
+    border: none; /* Remove border for button */
+    border-radius: 5px; /* Add border-radius for button */
+    cursor: pointer; /* Add cursor style for button */
+    margin-left: 10px; /* Add margin for button */
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course {
+    text-align: center;
+    background-color: #3498db; /* Primary Color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.course-icon {
+    margin-bottom: 10px;
+}
+
+.course-icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.course:hover {
+    background-color: #2c3e50; /* Secondary Color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.jumbotron {
+    color: black;
+    margin-top: 10px;
+    align-items: center;
+    height: 150px;
+}   

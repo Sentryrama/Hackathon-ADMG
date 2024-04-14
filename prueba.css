@@ -1,0 +1,167 @@
+:root {
+    --color-primario: #FFA500; /* Anaranjado */
+    --color-secundario: #FFD700; /* Amarillo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-primario);
+    padding: 20px;
+    width: auto;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+  }
+
+nav {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a{
+    margin-left: 20px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center
+
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo h1{
+    color: white;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px 40px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    background-color: var(--color-primario);
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#search-bar-section {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#loginForm{
+    background-color: var(--color-primario);
+}
+
+.active {
+    font-weight: bold; /* Bold font for active link */
+    color: #f39c12; /* Color for active link */
+}
+
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
+
+#educacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.emphasized-heading {
+    font-size: 3em; /* Adjust the value as needed for a bigger size */
+    font-weight: bold;
+    color: #333; /* Choose a color that stands out */
+    text-transform: uppercase; /* Optional: Convert text to uppercase */
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course {
+    text-align: center;
+    background-color: rgb(4, 97, 60); /* Primary Color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.course-icon {
+    margin-bottom: 10px;
+}
+
+.course-icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.course:hover {
+    background-color: #2ba962; /* Secondary Color */
+    color: #fff;
+    cursor: pointer;;
+}
