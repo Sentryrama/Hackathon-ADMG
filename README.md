@@ -14,7 +14,6 @@
 
 > __We came as 1 of the 4 teams that represents our school "Universidad Autónoma Metropolitana" (Unidad Iztapalapa)__
 
-1. **Enlaces automáticos**: Puedes crear enlaces automáticos simplemente escribiendo la URL o la dirección de correo electrónico. Por ejemplo:
    
 ---
 
