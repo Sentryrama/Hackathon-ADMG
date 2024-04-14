@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Xihuame</title>
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="...">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="./forumlario.css">
+  <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a href="#" class="navbar-brand">Xihuame</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosostros</a></li>
+          <li class="nav-item"><a href="./educacion.html" class="nav-link">Educación</a></li>
+          <li class="nav-item"><a href="./finanzas.html" class="nav-link">Finanzas</a></li>
+          <!-- <li class="nav-item"><a href="./prestamos.html" class="nav-link" >Préstamos</a></li> -->
+          <li class="nav-item active"><a href="./formulario.html" class="nav-link">Formulario</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1>Registro de prestamo</h1>
+    </div>
+    <div class="container">
+      
+      <h1>Registro de datos</h1>
+      <span class="nota-formulario">
+        Si usted cuenta con historial crediticio favor de subirlo añadiendo  comprobantes de pago de luz, agua, renta debido a que estos se pondenaran.
+      </span>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="nombre" >Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="apellido" >Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" >Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm-9">
+            <label for="domicilio" >Domicilio</label>
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="estado" >Estado</label>
+            <select id="estado" class="form-control">
+              <option selected>CDMX</option>
+              <option >Hidalgo</option>
+              <option >Guanajuato</option>
+              <option >Monterrey</option>
+              <option >Estado de Mexico</option>
+              <option >Queretaro</option>
+            </select>
+          </div>
+        </div>
+        <p>Dar los recibos de los últimos 6 meses. </p>
+        <div class="form-group">
+            <form action="procesar_archivo.php" method="post" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="archivo" class="form-label">Agua</label>
+                <input type="file" class="form-control" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf">
+              </div>
+              <div class="payment-options">
+                <input type="radio" name="payment_option_1" value="monthly" id="monthly_1" required>
+                <label for="monthly_1">Mensual</label>
+                <input type="radio" name="payment_option_1" value="bimonthly" id="bimonthly_1">
+                <label for="bimonthly_1">Bimestral</label>
+                <input type="radio" name="payment_option_1" value="quarterly" id="quarterly_1">
+                <label for="quarterly_1">Trimestral</label>
+                <input type="radio" name="payment_option_1" value="semi-annual" id="semiannual_1">
+                <label for="semiannual_1">Semestral</label>
+            </div>
+              
+
+            </form>
+          </div>
+        <div class="form-group">
+            <form action="procesar_archivo.php" method="post" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="archivo" class="form-label">Gas (Si es anual, omita)</label>
+                <input type="file" class="form-control" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf">
+              </div>
+            </form>
+          </div>
+          <div class="payment-options">
+            <input type="radio" name="payment_option_1" value="monthly" id="monthly_1" required>
+            <label for="monthly_1">Mensual</label>
+            <input type="radio" name="payment_option_1" value="bimonthly" id="bimonthly_1">
+            <label for="bimonthly_1">Bimestral</label>
+            <input type="radio" name="payment_option_1" value="quarterly" id="quarterly_1">
+            <label for="quarterly_1">Trimestral</label>
+            <input type="radio" name="payment_option_1" value="semi-annual" id="semiannual_1">
+            <label for="semiannual_1">Semestral</label>
+        </div>
+        <div class="form-group">
+            <form action="procesar_archivo.php" method="post" enctype="multipart/form-data">
+              <div class="mb-3">
+                <label for="archivo" class="form-label">Electricidad</label>
+                <input type="file" class="form-control" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf">
+              </div>
+            </form>
+          </div>
+        <div class="payment-options">
+            <input type="radio" name="payment_option_1" value="monthly" id="monthly_1" required>
+            <label for="monthly_1">Mensual</label>
+            <input type="radio" name="payment_option_1" value="bimonthly" id="bimonthly_1">
+            <label for="bimonthly_1">Bimestral</label>
+            <input type="radio" name="payment_option_1" value="quarterly" id="quarterly_1">
+            <label for="quarterly_1">Trimestral</label>
+            <input type="radio" name="payment_option_1" value="semi-annual" id="semiannual_1">
+            <label for="semiannual_1">Semestral</label>
+        </div>
+        <p style="font-weight: bold;">¿Tienes comprobante de ingresos?</p>
+        <div class="payment-options">
+            <input type="radio" name="payment_option_1" value="monthly" id="monthly_1" required>
+            <label for="monthly_1">Sí</label>
+            <input type="radio" name="payment_option_1" value="bimonthly" id="bimonthly_1">
+            <label for="bimonthly_1">No</label>
+        </div>
+        <div class="form-group">
+          <form action="procesar_archivo.php" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="archivo" class="form-label">Constancia o comprobante de ingresos mensuales</label>
+              <input type="file" class="form-control" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf">
+            </div>
+          </form>
+        </div>
+          <div class="form-row">
+            <p style="font-weight: bold;">Cantidad de ganado</p>
+            
+            <div class="form-row">
+              <div class="form-group col-md-6" style="display: flex; margin: 20px;">
+                  <label for="ganado">Gallinas</label>
+                  <input type="number" class="form-control" id="ganado" name="ganado" min="0">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6" style="display: flex; margin: 20px;">
+                  <label for="ganado">Vacas</label>
+                  <input type="number" class="form-control" id="ganado" name="ganado" min="0">
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6" style="display: flex; margin: 20px;">
+                  <label for="ganado">Cerdos</label>
+                  <input type="number" class="form-control" id="ganado" name="ganado" min="0">
+              </div>
+          </div>
+            
+            <div class="form-group col-md-6">
+              <label for="terreno">Cantidad de Terreno (m²)</label>
+              <input type="number" class="form-control" id="terreno" name="terreno" min="0">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="casa">Cantidad de Casas Propias</label>
+              <input type="number" class="form-control" id="casa" name="casa" min="0">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="auto">Cantidad de Autos</label>
+              <input type="number" class="form-control" id="auto" name="auto" min="0">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="auto">Declara cuánto dispone de ahorros</label>
+              <input type="number" class="form-control" id="auto" name="auto" min="0">
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="gridCheck">
+            <label for="gridCheck" class="form-check-label">Acepto terminos y condiciones</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">Facebook</a>
+          <a href="http://www.twitter.com">Twitter</a>
+          <a href="http://www.instagram.com">Instagram</a>
+          <a href="http://www.google.com">Google</a>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-center">
+          <address>
+            <h3>Oficina Central</h3>
+            <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, Caba, Cuba</p>
+            <p><span class="oi oi-phone footer-address-icon"></span>+839457350</p>
+            <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <a href="http://www.facebook.com">Nosotros</a>
+          <a href="http://www.twitter.com">Precios</a>
+          <a href="http://www.instagram.com">Terminos y condiciones</a>
+          <a href="http://www.google.com">Contacto</a>
+        </div>  
+      </div>   
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+ 
+  </body>
+</html>

@@ -1,0 +1,7 @@
+.nota-formulario {
+    display: block; /* Mostrar como bloque para ocupar toda la anchura disponible */
+    margin-top: 5px; /* Espacio superior */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #6c757d; /* Color del texto */
+    padding: 10px;
+  }
