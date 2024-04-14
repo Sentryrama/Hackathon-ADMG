@@ -10,10 +10,26 @@ body {
     padding: 0;
 }
 
+
 header {
-    background-color: var(--color-primario);
-    padding: 20px;
-    width: auto;
+    background-color: var(--color-primario); /* Assuming --color-primario is a custom CSS variable */
+    color: #fff;
+    padding: 10px 20px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .logo h1 {
+    font-size: 1.2em;
+    margin: 0;
+    }
 }
 
 nav {
@@ -29,7 +45,6 @@ nav {
 nav a{
     margin-left: 20px;
 }
-
 
 .logo{
     display: flex;
@@ -69,15 +84,23 @@ section {
     margin-bottom: 20px;
 }
 
+/* Footer styles */
+
 footer {
-    position: fixed;
-    background-color: var(--color-primario);
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    clear: both;
+    height: 200px;
 }
+    
+
+    
+    footer p {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    }
 
 #search-bar-section {
     text-align: center;
